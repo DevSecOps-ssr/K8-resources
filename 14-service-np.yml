@@ -1,8 +1,9 @@
-apiVersion: v1 
-kind: Service 
-metadata: 
-  name: nginx
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-np
 spec:
+  type: NodePort
   selector:
     #labels are used as selectors
     project: roboshop
@@ -10,7 +11,7 @@ spec:
     environment: Dev
   ports: 
   - protocol: TCP
-    port: 80 #service port
-    targetPort: 80 #container port
-    
-    
+    port: 80 
+    targetPort: 80 
+    nodePort: 32141
+  
