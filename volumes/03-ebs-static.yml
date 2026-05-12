@@ -28,7 +28,7 @@ spec:
 
 ---
 apiVersion: v1
-kind: pod 
+kind: Pod 
 metadata:
   name: app
 spec:
