@@ -11,8 +11,8 @@ spec:
   storageClassName: "" # sc should be empty for static provisioning
   persistentVolumeReclaimPolicy: Retain 
   csi: 
-  driver: efs.csi.aws.com
-  volumeHandle: fs-07b1842a76a346c20 # provide file system id
+    driver: efs.csi.aws.com
+    volumeHandle: fs-07b1842a76a346c20 # provide file system id
 
 ---
 
